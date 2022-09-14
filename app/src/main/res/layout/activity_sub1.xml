@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".subActivity1"
+    android:background="#ffffff"
+    android:id="@+id/drawerLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/btn_open"
+            android:layout_width="53dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#7B817B"
+            android:text=">"
+            android:textSize="23dp" />
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_toRightOf="@id/btn_open"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="#7B817B"
+            android:text="home"/>
+
+        <TextView
+            android:id="@+id/textV1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_open"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="△삼각형의 넓이"
+            android:textSize="30dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textV1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="밑변길이: "
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/edtitText_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textV1"
+            android:layout_toRightOf="@+id/textV2"
+            android:hint="값을 입력하세요"
+            android:textColor="@color/black"
+            android:textColorHint="#9A9595"
+            android:inputType="number"/>
+        <View
+            android:id="@+id/line11"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/edtitText_1"
+            android:layout_toRightOf="@+id/textV2"
+            android:layout_marginBottom="10dp"
+            android:background="#0B0A0A"
+            android:layout_margin="0dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/textV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textV2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="높이: "
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+        <View
+            android:id="@+id/line12"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/edtitText_2"
+            android:layout_toRightOf="@+id/textV2"
+            android:layout_marginBottom="10dp"
+            android:background="#0B0A0A"
+            android:layout_margin="0dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/edtitText_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textV2"
+            android:layout_toRightOf="@+id/textV2"
+            android:hint="값을 입력하세요"
+            android:textColor="@color/black"
+            android:textColorHint="#9A9595"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/equal_btnsub1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtitText_2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#7B817B"
+            android:text="="
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textV4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/equal_btnsub1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="결과: "
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/edtitText_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/equal_btnsub1"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/textV2"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/see_formal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtitText_result"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#7B817B"
+            android:text="공식보기"
+            android:textSize="25dp" />
+
+
+    </RelativeLayout>
+    <include layout="@layout/activity_drawer"/>
+</androidx.drawerlayout.widget.DrawerLayout>

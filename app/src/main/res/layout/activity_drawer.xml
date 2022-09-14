@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#9BB5B5"
+    android:orientation="vertical"
+    android:id="@+id/drawerView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img"
+            android:layout_margin="10dp"/>
+
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:text="닫기"
+            android:textSize="23dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#7B817B"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:backgroundTint="#9BB5B5"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7B817B"
+            android:text="1.도형넓이"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/extent_quardrangle"
+            android:text="・사각형"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/extent_parallel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="・평행사변형"
+            android:gravity="center"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/extent_triangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="・삼각형"
+            android:gravity="center"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/extent_diamond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="・마름모"
+            android:gravity="center"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/extent_sadari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="・사다리꼴"
+            android:gravity="center"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/extent_circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="・원"
+            android:gravity="center"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/extent_fanshape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="・부채꼴 "
+            android:gravity="center"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7B817B"
+            android:text="2.도형부피"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/volume_gidung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="・기둥(각기둥, 원기둥)"
+            android:gravity="center"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/volume_ppul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="・뿔(각뿔, 원뿔)"
+            android:gravity="center"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/volume_ppuldae"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="・뿔대(각뿔대, 원뿔대)"
+            android:gravity="center"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7B817B"
+            android:text="3. 기타"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/wonju"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="・원주"
+            android:gravity="center"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/length_ho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="・부채꼴의 호의 길이"
+            android:gravity="center"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7B817B"
+            android:text="4.도형겉넓이"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/outerextent_oppul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="・원뿔"
+            android:gravity="center"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/outerextent_gppul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="・각뿔"
+            android:gravity="center"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/outerextent_gu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="・구"
+            android:gravity="center"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/outerextent_ggidung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="・각기둥"
+            android:gravity="center"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/outerextent_ogidung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="・원기둥"
+            android:gravity="center"
+            android:backgroundTint="#9BB5B5"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
